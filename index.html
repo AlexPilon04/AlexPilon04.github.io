@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir='ltr'>
 
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .my-button {
+            position: absolute;
+            left: 650px;
+            top: 100px;
+        }
+    </style>
+
     <head>
-        <title> You shouldn't have messed with me</title>
+        <link rel="sytlesheet" href="styles.css">
     </head>
- 
-    <Header> Press to Hit</Header>
-    
-    <body>
+
+    <title> You shouldn't have messed with me </title>
+
+
+    <body style="background-color:powderblue;"></body>
+
+
         <div>
+
+            <h1> 
+               <b>Press to Hit </b>
+             </h1>
+
+
             <div>
                 <audio id="audio" src="audio/494897-Kid_Girl-Pain-Shout_Long-Intense-5.wav" autostart="false"> </audio>
-                <button onclick="clickFace();"> 
+                <button onclick="clickFace();" class="my-button"> 
                 <img  src="images/SubjectPicture.JPG" alt="Image of Stupid Bitch">
                 </button>
             </div>
+
         </div>
-        <script>
-            function clickFace() {
-                var sound = document.getElementById('audio');
-                sound.play();
-            }
-        </script>
+
+            <script>
+                function clickFace() {
+                     var sound = document.getElementById('audio');
+                    sound.play();
+                }
+            </script>
+
     <body>
+
